@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   /* 🎨 Paleta principal */
   --bg: #0a0f1e; /* fondo general */
@@ -67,6 +69,8 @@ body {
   list-style: none;
   color: var(--text);
 }
+.contenido a{
+  cursor: pointer;}
 .active {
   text-transform: uppercase;
   color: var(--accent);
@@ -92,9 +96,17 @@ body {
 }
 .contenido-users {
   display: flex;
-  flex-direction: row;
-  gap: 5px;
+  gap: 20px;
+  align-items: center;
+  margin-right: 20px;
 }
+.label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin-left: 4px;
+}
+.user,
+.cart{cursor: pointer;}
 article {
   margin-top: 90px;
   padding: 20px;

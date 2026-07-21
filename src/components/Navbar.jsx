@@ -31,17 +31,14 @@ const Navbar = () => {
             </ul>
           </nav>
           <div className="contenido-users">
-            {" "}
-            <p>
+            <div className="user">
               <User color="#c0bfbc" />
-              <br />
-              Mi cuenta
-            </p>
-            <p>
+              <span className="label">Mi cuenta</span>
+            </div>
+            <div className="cart">
               <ShoppingCart color="#c0bfbc" />
-              <br />
-              Mi carrito
-            </p>
+              <span className="label">Carrito</span>
+            </div>
           </div>
         </div>
       </div>
