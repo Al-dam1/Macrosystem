@@ -43,8 +43,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <article>
-        <div className="oferta">
+      <article className="flex flex-col items-center w-full px-4 py-8 mx-auto mt-8 mb-16 sm:flex-row sm:justify-between sm:items-start">
+        <div className="oferta sm:text-left" >
           <span className="oferta-span">Oferta del dia!</span>
           <h2 className="oferta-h2">Mouse Gamer Rgb</h2>
           <p className="oferta-description">
@@ -52,13 +52,13 @@ const Navbar = () => {
             personalizable, diseño ergonómico y botones programables, este mouse
             te da ventaja en cada partida.
           </p>
-          <a className="oferta-btn" href="#">
+          <a className="oferta-btn " href="#">
             Comprar
           </a>
         </div>
         <div className="oferta-img">
           {" "}
-          <img src={Mouse} width={"100%"} height={"auto"} />
+          <img src={Mouse} width={"100%"} height={"auto"} className="object-contain w-full h-64 " />
         </div>
       </article>
     </header>
