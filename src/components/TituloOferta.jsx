@@ -8,6 +8,7 @@ const TituloOferta = ({ texto }) => {
                bg-[radial-gradient(circle_at_120.71%_50%,_#ff72ff_0,_#eb5bff_25%,_#b53cf2_50%,_#7622e3_75%,_#021cdb_100%)]">
         {texto}
       </h2>
+     
     </div>
   );
 };

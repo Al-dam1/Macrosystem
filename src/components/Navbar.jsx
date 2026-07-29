@@ -43,24 +43,43 @@ const Navbar = () => {
         </div>
       </div>
 
-      <article className="flex flex-col items-center w-full px-4 py-8 mx-auto mt-8 mb-16 sm:flex-row sm:justify-between sm:items-start">
-        <div className="oferta sm:text-left" >
-          <span className="oferta-span">Oferta del dia!</span>
-          <h2 className="oferta-h2">Mouse Gamer Rgb</h2>
-          <p className="oferta-description">
-            Precisión milimétrica y estilo gamer. Con iluminación RGB
-            personalizable, diseño ergonómico y botones programables, este mouse
-            te da ventaja en cada partida.
-          </p>
-          <a className="oferta-btn " href="#">
-            Comprar
-          </a>
-        </div>
-        <div className="oferta-img">
-          {" "}
-          <img src={Mouse} width={"100%"} height={"auto"} className="object-contain w-full h-64 " />
-        </div>
-      </article>
+  <article className="flex flex-col items-center w-full mx-auto sm:flex-row sm:justify-between sm:items-start">
+  <div className="oferta sm:text-left sm:w-1/2">
+    <span className="oferta-span">Oferta del dia!</span>
+    <h2 className="oferta-h2">Mouse Gamer Rgb</h2>
+    <p className="oferta-description">
+      Precisión milimétrica y estilo gamer. Con iluminación RGB
+      personalizable, diseño ergonómico y botones programables, este mouse
+      te da ventaja en cada partida.
+    </p>
+    <a className="oferta-btn" href="#">Comprar</a>
+  </div>
+  <div className="flex items-center justify-center oferta-img sm:w-1/2">
+    <img src={Mouse} className="object-contain w-full h-64 " />
+  </div>
+</article>
+{/* <section className="flex-row justify-between bg-amber-50">
+  <div>
+    <h2>Procesadores</h2>
+    <p>lorem jdaskjdashda
+    </p>
+    <span>ver mas</span>
+  </div>
+  <div>
+    <h2>tarjetas graficas</h2>
+    <p>lorem jdaskjdashda
+    </p>
+    <span>ver mas</span>
+  </div>
+  <div>
+    <h2>almacenamiento </h2>
+    <p>lorem jdaskjdashda
+    </p>
+    <span>ver mas</span>
+  </div>
+</section> */}
+
+
     </header>
   );
 };
