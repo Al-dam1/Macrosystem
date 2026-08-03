@@ -44,14 +44,13 @@
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  
 }
-body{
-   background: black;
+
+body {
+  padding: 0;
+  margin: 0;
 }
 header {
   background-image: url(../src/assets/fondoNavbar.png);
@@ -79,8 +78,9 @@ header > article {
   color: var(--text);
 }
 
-.contenido a{
-  cursor: pointer;}
+.contenido a {
+  cursor: pointer;
+}
 .active {
   text-transform: uppercase;
   color: var(--accent);
@@ -112,11 +112,13 @@ header > article {
 }
 .label {
   font-size: 12px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-left: 4px;
 }
 .user,
-.cart{cursor: pointer;}
+.cart {
+  cursor: pointer;
+}
 article {
   margin-top: 90px;
   padding: 20px;
@@ -143,12 +145,12 @@ article {
   font-size: 0.9rem;
   font-weight: 500;
   color: #000000;
-  
+
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .oferta-h2 {
-  color:#fff;
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   font-family: var(--heading-font);
@@ -189,6 +191,6 @@ article {
   margin-right: 60px;
 }
 footer {
-  background-color: black;
+ 
   color: var(--text);
 }
