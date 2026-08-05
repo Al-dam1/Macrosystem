@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className ="bg-gray-700">
+    <footer className ="bg-gradient-to-b from-[#02060e] via-[#071e38] via-[#003165] via-[#004494] to-[#0356c5]">
       <section className="grid items-start grid-cols-3 m-8 ">
         <div className="text-left">
           <h2 className="text-2xl text-amber-100 mb-[5px]">Categorias</h2>
@@ -59,7 +59,7 @@ const Footer = () => {
       <section className="flex flex-col items-start p-4">
       
 
-        <div className="flex items-center gap-4 mt-12">
+        <div className="flex flex-wrap items-center gap-4 mt-12">
           <h2>Medios de pago</h2>
           <img src=" https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" className="h-12 "/>
           <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"className="h-12 " />
