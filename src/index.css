@@ -71,8 +71,7 @@ header > article {
   gap: 10px;
 }
 
-.contenido nav ul {
-  display: flex;
+.contenido nav > ul {
   gap: 15px;
   list-style: none;
   color: var(--text);
@@ -126,7 +125,7 @@ article {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  width: 50%;
+ width: 80%;
   display: flex;
   justify-content: space-between; /* separa texto e imagen */
   margin-left: auto; /* se pega a la derecha */
