@@ -1,78 +1,41 @@
-import React, { useState } from "react";
-import Navbar from "../src/components/Navbar";
-import Footer from "../src/components/Footer";
+import { useState } from "react";
 
-const [nombre, setNombre] = useState("");
-function manejarEnvio(evento) {
-  evento.preventDefault();
-  alert(`formulario enviado por ${nombre}`);
-}
-const [correo, setCorreo] = useState('');
-const [numero, setNumero] = useState('');
-const [mensaje, setMensaje] = useState('')
 const Contacto = () => {
+  const [Nombre, setNombre] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Telefono, setTelefono] = useState("");
+
   return (
-    <div>
-      <Navbar />
-      <section>
-        <article>
-          <h2>Ponte en contacto</h2>
-          <p>lorem jasdnjad</p>
-          <div>
-            <div>icono</div>
-            <div>
-              <span>whatsahp</span>
-              <h3>21312033</h3>
-            </div>
-            <div>icono</div>
-            <div>
-              <span>telefono</span>
-              <h3>21312033</h3>
-            </div>
-            <div>icono</div>
-            <div>
-              <span>email</span>
-              <h3>21312033</h3>
-            </div>
-            <div>icono</div>
-            <div>
-              <span>ubicacion</span>
-              <h3>21312033</h3>
-            </div>
-          </div>
-        </article>
-        <article>
-          <form onSubmit={manejarEnvio}>
-            <input
-              type="text"
-              value={nombre}
-              onChange={(e) => setNombre(e.target.value)}
-              placeholder="Ingresa tu nombre"
-            />
-            <input
-              type="text"
-              value={correo}
-              onChange={(e) => setCorreo(e.target.value)}
-              placeholder="correo@ejemplo.com"
-            />
-            <input
-              type="number"
-              value={numero}
-              onChange={(e) => setCorreo(e.target.value)}
-              placeholder="Numero de contacto"
-            />
-            <input
-              type="text"
-              value={mensaje}
-              onChange={(e) => setCorreo(e.target.value)}
-              placeholder="¿En que podemos ayudarte?"
-            />
-            <button type="submit"> Enviar formulario</button>
-          </form>
-        </article>
-      </section>
-      <Footer />
-    </div>
+    <section className="flex-row justify-around p-4 md:flex bg-[#22c55e]">
+      <aside className="flex flex-col gap-4 p-4 mb-4 text-white bg-black rounded-lg md:mb-0w-full">
+        <h3 className="font-bold text-center">Datos de contacto</h3>
+        <p>📞 Teléfono: 4755-0258</p>
+        <p>📱 WhatsApp: 11-3492-6049</p>
+        <p>📧 Email: macrosystemsm@gmail.com</p>
+        <p>📍 Dirección: Moreno 3755, Buenos Aires</p>
+      </aside>
+      <form className="flex flex-col justify-center w-full gap-12 p-4 text-white bg-black rounded-lg shadow-md md:w-1/2 "> 
+        <input
+          type="text"
+          nombre={Nombre}
+          onChange={(e) => setNombre(e.target.value)}
+          placeholder="Ingresa tu nombre"></input>
+        <input
+          type="email"
+          email={Email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="macrosystem@gmail.com"></input>
+        <input
+          type="tel"
+          telefono={Telefono}
+          onChange={(e) => setTelefono(e.target.value)}
+          placeholder="4755-0258"></input>
+          <textarea placeholder="Ingresa tu mensaje"></textarea>
+        <button type="submit"
+        className="w-full py-2 text-white rounded bg-green-950 hover:bg-green-700"
+        >Enviar</button>
+      </form>
+    </section>
   );
 };
 

@@ -132,7 +132,7 @@ const Footer = () => {
       </section>
      
 
-      <section  className="flex flex-col w-full p-4 text-left bg-black h-[auto] align-center gap-[3px]">
+      <section  className="flex flex-col w-full p-4 text-left bg-black h-[auto] align-center gap-[3px] md:text-center items-center">
         <small>
           {" "}
           Copyright Macrosystem - 20443635115 - 2026. Todos los derechos
