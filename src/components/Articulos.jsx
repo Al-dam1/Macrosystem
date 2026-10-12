@@ -1,7 +1,9 @@
 import Data from '../../data/products.json';
 
 const Articulos = () => {
-  return (
+  return (<>
+        <h2 className='text-center mt-8 mb-0 text-4xl text-amber-900 overflow-hidden'>Mira todos los articulos</h2>
+
     <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-2 '>
       {Data.map((producto) => (
         <article
@@ -25,6 +27,7 @@ const Articulos = () => {
 </article>
       ))}
     </section>
+    </>
   );
 };
 

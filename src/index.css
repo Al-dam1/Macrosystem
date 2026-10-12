@@ -26,26 +26,32 @@
   --btn-radius: 8px; /* bordes redondeados */
   --btn-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 
-  /* 🪟 Cards */
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.1);
-  --card-radius: 16px;
-  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+ /* 🪟 Cards */
+ --card-bg: rgba(17, 24, 39, 0.85);
+ --card-border: rgba(148, 163, 184, 0.14);
+ --card-radius: 12px;
+ --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+ 
+ /* 🧭 Navbar */
+ --nav-bg: rgba(8, 11, 20, 0.88);
+ --nav-border: rgba(148, 163, 184, 0.12);
+ --nav-link: #E5E7EB;
+ --nav-link-hover: #00D9F5;
 
-  /* 🧭 Navbar */
-  --nav-bg: rgba(10, 15, 30, 0.8);
-  --nav-border: rgba(255, 255, 255, 0.1);
-  --nav-link: #e0e0e0;
-  --nav-link-hover: #ff7a00;
-
-  /* 🌈 Gradientes y efectos */
-  --gradient: linear-gradient(135deg, #0a0f1e, #3a1c71);
-  --glass-blur: blur(12px);
+   /* 🌈 Gradientes y efectos */
+   --gradient: linear-gradient(135deg, #080B14, #15243B);
+   --glass-blur: blur(12px);
+ 
+   /* 🏷️ Estados */
+   --discount: #F43F5E;
+   --success: #22C55E;
 }
 
 * {
   box-sizing: border-box;
   overflow-x: hidden;
+  /* background-color:rgba(255, 255, 255, 0.05);
+  backdrop-filter:blur(16px) */
 }
 
 body {
