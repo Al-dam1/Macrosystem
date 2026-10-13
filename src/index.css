@@ -50,9 +50,7 @@
 * {
   box-sizing: border-box;
   overflow-x: hidden;
-  /* background-color:rgba(255, 255, 255, 0.05);
-  backdrop-filter:blur(16px) */
-}
+ }
 
 body {
   padding: 0;
@@ -194,6 +192,15 @@ article {
   width: 600px;
   height: auto;
   margin-right: 60px;
+}
+/* fondo para el main */
+.fondo-tecnologico{
+  background-image: url('/src/assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 footer {
  

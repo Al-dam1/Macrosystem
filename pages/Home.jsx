@@ -16,10 +16,6 @@ const Home = () => {
       <Ofertas/>
       <Articulo/>
       <Contacto/>
-      <button className="p-10 text-center bg-red-700 g-20">
-        twliwnd css funcionando
-      </button>
-
       <Footer />
     </div>
   );
