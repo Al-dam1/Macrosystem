@@ -1,22 +1,15 @@
 import React, { useState } from "react";
 import { User, ShoppingCart, Menu, X } from "lucide-react";
-import Logo from "../../src/assets/canvas.png";
 import Mouse from "../../src/assets/mouse1.png";
 const Navbar = () => {
   const [MenuMovil, setMenuMovil] = useState(false);
   const [productosAbierto, setProductosAbierto] = useState(false);
   return (
     <>
-      <header>
+      <header className='fondo-tecnologico'>
         <div className="contenedor">
-          <div className="contenido">
-            <img
-              src={Logo}
-              alt="logo de macrosystem"
-              width={"200px"}
-              height={"100px"}
-            />
-            <nav className="sticky z-50 ">
+          <div className="contenido ">
+           <nav className="sticky z-50 ">
               <ul className="hidden gap-6 ml-8 md:flex">
                 <li className="active">Inicio</li>
                 <li className="relative group">

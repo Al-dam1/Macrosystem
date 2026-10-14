@@ -56,13 +56,7 @@ body {
   padding: 0;
   margin: 0;
 }
-header {
-  background-image: url(../src/assets/fondoNavbar.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; /* opcional: efecto parallax */
-}
+
 header > article {
   margin-bottom: 100px;
   margin-right: 50px;
@@ -198,7 +192,6 @@ article {
   background-image: url('/src/assets/fondo.jpg');
   background-size: cover;
   background-position: center;
-
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
