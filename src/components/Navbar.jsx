@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { User, ShoppingCart, Menu, X } from "lucide-react";
+import { User, ShoppingCart, Menu, X,Search } from "lucide-react";
 import Logo from '../../src/assets/logo.webp'
 import Mouse from "../../src/assets/mouse1.png";
 const Navbar = () => {
@@ -7,6 +7,7 @@ const Navbar = () => {
   const [productosAbierto, setProductosAbierto] = useState(false);
   return (
     <>
+    
       <header className='fondo-tecnologico'>
         <div className="contenedor">
           
@@ -17,6 +18,8 @@ const Navbar = () => {
           width={'200px'}
           />
            <nav className="sticky z-50 ">
+          
+           
               <ul className="hidden gap-6 ml-8 md:flex">
                 <li className="active">Inicio</li>
                 <li className="relative group">
@@ -70,12 +73,14 @@ const Navbar = () => {
 
             <div className="contenido-users">
               <div className="user">
-                <User color="#c0bfbc" />
-                <span className="label">Mi cuenta</span>
+              <Search color="#c0bfbc"/>
+              <span >mi carrito</span>
               </div>
+              
               <div className="cart">
                 <ShoppingCart color="#c0bfbc" />
-                <span className="label">Carrito</span>
+                <span  >mi carrito</span>
+
               </div>
               <button
                 className="p-2 md:hidden"
@@ -127,7 +132,7 @@ const Navbar = () => {
             <li>Contacto</li>
             <li>Políticas de devolución</li>
             <li>Políticas de envío</li>
-            <div className="flex flex-row gap-8">  
+            <div className="flex flex-row gap-8 ">  
               <li className="flex flex-row items-center gap-2">
               <User color="#c0bfbc" />
               <span>Crear cuenta</span>
