@@ -1,7 +1,9 @@
 import Data from '../../data/products.json';
-
+import Navbar from './Navbar';
+import Footer from './Footer';
 const Articulos = () => {
-  return (
+  return ( <>
+  <Navbar/>
   <div className='fondo-tecnologico'>
     
       <section className="px-4 py-8 sm:px-6">
@@ -55,6 +57,8 @@ const Articulos = () => {
         </div>
       </section>
     </div>
+    <Footer/>
+    </>
   );
 };
 
