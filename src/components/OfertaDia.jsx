@@ -4,7 +4,7 @@ import Mouse from "../../src/assets/mouse1.png";
 const OfertaDia = () => {
   return (
     <div className='fondo-tecnologico pr-10'>
-       <article className="flex flex-col items-center mx-auto sm:flex-row sm:justify-between sm:items-start sm:mx-auto mb-12">
+       <article className="flex flex-col items-center mx-auto sm:flex-row sm:justify-between sm:items-center  sm:px-44 mb-12">
           <div className="oferta sm:text-left">
             <span className="oferta-span">Oferta del dia!</span>
             <h2 className="oferta-h2">Mouse Gamer Rgb</h2>

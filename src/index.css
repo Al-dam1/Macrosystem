@@ -125,11 +125,25 @@ article {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
  width: 80%;
   display: flex;
-  justify-content: space-between; /* separa texto e imagen */
-  margin-left: auto; /* se pega a la derecha */
-  margin-right: 20px; /* opcional: espacio con el borde */
+  justify-content: space-between; /* separa texto e imagen */ 
+  margin-right: 20px; 
+  margin-left: auto; 
 }
-
+@media (max-width:360px){
+  article {
+    margin-top: 90px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+   width: 90%;
+    display: flex;
+    justify-content: space-between; /* separa texto e imagen */ 
+    margin-left: 40px;
+   
+  }
+}
 .oferta {
   display: flex;
   flex-direction: column;

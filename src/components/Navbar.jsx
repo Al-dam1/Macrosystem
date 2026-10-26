@@ -28,7 +28,7 @@ const Navbar = () => {
                   </Link>
                   </li>
                 <li className="relative group">
-                  <Link to='/Articulos'>
+                  <Link to='/productos'>
                   <a href="#" className="cursor-pointer">
                     Productos <ChevronDown />
                   </a>
@@ -126,11 +126,11 @@ const Navbar = () => {
 
           <ul className="flex flex-col gap-6 px-6 py-4 text-white">
             
-            <li>Inicio</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-            <li>Políticas de devolución</li>
-            <li>Políticas de envío</li>
+            <li><Link to='/'>Inicio</Link></li>
+            <li><Link to='/productos'>Productos</Link></li>
+            <li><Link to='/contacto'>Contacto</Link></li>
+            <li><Link to='/politicaDevolucion'>Políticas de devolución</Link></li>
+            <li><Link to='/politicaEnvio'>Políticas de envío</Link></li>
             <div className="flex flex-row gap-8 ">  
               <li className="flex flex-row items-center gap-2">
               <User color="#c0bfbc" />
