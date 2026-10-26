@@ -3,19 +3,18 @@ import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import Slider from "../src/components/Slider";
 import Banner from "../src/components/Banner";
-import Contacto from "./Contacto";
 import Articulo from '../src/components/Articulos';
 import Ofertas  from "../src/components/Ofertas";
-
+import OfertaDia from '../src/components/OfertaDia';
 const Inicio = () => {
   return (
     <>
       <Navbar/>
+      <OfertaDia/>
       <Slider/>
       <Banner />
       <Ofertas/>
       <Articulo/>
-      <Contacto/>
       <Footer />
     </>
   )

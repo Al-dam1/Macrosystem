@@ -5,7 +5,7 @@ const notFound = () => {
   return (
     <div className=''>
       <img 
-      src={Found}
+      src={Found }
       className='min-h-screen bg-cover bg-center bg-no-repeat'/>
     </div>
   )

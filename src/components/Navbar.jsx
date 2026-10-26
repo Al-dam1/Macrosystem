@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { User, ShoppingCart, Menu, X,Search } from "lucide-react";
+import { User, ShoppingCart, Menu, X,Search, ChevronDown } from "lucide-react";
 import Logo from '../../src/assets/logo.webp'
-import Mouse from "../../src/assets/mouse1.png";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [MenuMovil, setMenuMovil] = useState(false);
   const [productosAbierto, setProductosAbierto] = useState(false);
@@ -21,14 +22,21 @@ const Navbar = () => {
           
            
               <ul className="hidden gap-6 ml-8 md:flex">
-                <li className="active">Inicio</li>
+                <li className="active">
+                  <Link>
+                  Inicio
+                  </Link>
+                  </li>
                 <li className="relative group">
+                  <Link to='/Articulos'>
                   <a href="#" className="cursor-pointer">
-                    Productos
+                    Productos <ChevronDown />
                   </a>
+                  </Link>
+                  
                   <ul className="absolute hidden p-2 mt-2 bg-gray-900 group-hover:block">
-                    <li>
-                      Conectividad
+                    <li><Link to='/Conectividad'>Conectividad</Link>
+                      
                       <ul className="ml-4">
                         <li>TP-Link</li>
                         <li>Mercusys</li>
@@ -59,14 +67,22 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
+                 <li>
+                 <Link to='/contacto'>
+                 Contacto
+                 </Link>
+                </li>
+                
+                
                 <li>
-                  <a href="#">Contacto</a>
+                  <Link to='/politicaDevolucion'>
+                  Políticas de devolución
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Políticas de devolución</a>
-                </li>
-                <li>
-                  <a href="#">Políticas de envío</a>
+                  <Link to='/politicaEnvio'>Políticas de envío
+                  </Link>
+                 
                 </li>
               </ul>
             </nav>
@@ -91,23 +107,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        <article className="flex flex-col items-center mx-auto sm:flex-row sm:justify-between sm:items-start">
-          <div className="oferta sm:text-left ">
-            <span className="oferta-span">Oferta del dia!</span>
-            <h2 className="oferta-h2">Mouse Gamer Rgb</h2>
-            <p className="oferta-description">
-              Precisión milimétrica y estilo gamer. Con iluminación RGB
-              personalizable, diseño ergonómico y botones programables, este
-              mouse te da ventaja en cada partida.
-            </p>
-            <a className="oferta-btn" href="#">
-              Comprar
-            </a>
-          </div>
-          <div className="flex items-center justify-center oferta-img sm:w-1/2">
-            <img src={Mouse} className="object-contain w-full h-64 mx-auto" />
-          </div>
-        </article>
       </header>
       {MenuMovil && (
         <div className="fixed inset-0 z-50 flex flex-col bg-gray-900 shadow-2xl md:hidden">
