@@ -14,6 +14,8 @@ import { Routes, Route } from "react-router-dom";
 import Conectividad from "./Conectividad";
 import PoliticaDevo from "./PoliticaDevo";
 import PoliticaEnvio from "./PoliticaEnvio";
+import DetalleProductos from "./DetalleProductos";
+import Productos from '../data/products.json'
 
 const Home = () => {
   return (
@@ -27,6 +29,7 @@ const Home = () => {
       <Route path="/contacto" element={<Contacto/>}/>
       <Route path="/politicaEnvio" element={<PoliticaEnvio/>}/>
       <Route path="/politicaDevolucion" element={<PoliticaDevo/>}/>
+      <Route path="/productos/:id" element={<DetalleProductos productos = {Productos} />}/>
 
       <Route path="*" element={<NotFound/>}/>
       </Routes>
