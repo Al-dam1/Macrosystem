@@ -4,9 +4,10 @@ import Navbar from '../src/components/Navbar'
 import Footer from '../src/components/Footer'
 const PoliticaDevo = () => {
   return (
-    <>
+    <div class name="fondo-tecnologico m-4 p-4 gap-4">
       <Navbar/>
      <h1>Políticas de devolución</h1>
+
 
       <p>
         En Macrosystem queremos que tengas una excelente experiencia de compra.
