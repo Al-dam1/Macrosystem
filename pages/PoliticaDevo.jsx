@@ -76,8 +76,8 @@ const PoliticaDevo = () => {
       </p>
 
       <p>Macrosystem - Tecnología y soluciones para vos.</p>
-      <Footer/>
-    <div/>
+      </Footer>
+    </div>
   )
 }
 
