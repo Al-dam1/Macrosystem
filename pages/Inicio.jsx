@@ -14,7 +14,6 @@ const Inicio = () => {
       <Slider/>
       <Banner />
       <Ofertas/>
-      <Articulo/>
       <Footer />
     </>
   )
