@@ -29,18 +29,20 @@ const Home = () => {
       <Routes>
         <Route
           path="/"
-          element=
-            {cargando ? (
-              <div className="min-h-screen w-full flex items-center justify-center bg-black">
-                <img
-                  className="w-full max-w-[500px] h-auto object-contain"
-                  src="/macrosystem.gif"
-                  alt="Cargando..."
-                />
-              </div>
+          element={
+            cargando ? (
+              <img 
+              className="h-screen bg-center bg-no-repeat bg-contain"
+                src="/macrosystem.gif"
+                alt="Cargando..."
+              />
             ) : (
-              <Inicio productos={Productos} cargando={cargando} />
-            )}
+              <Inicio
+                productos={Productos}
+                cargando={cargando}
+              />
+            )
+          }
         />
         <Route path="/productos" element={<Articulo />} />
 
