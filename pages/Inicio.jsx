@@ -6,7 +6,7 @@ import Banner from "../src/components/Banner";
 import Articulo from '../src/components/Articulos';
 import Ofertas  from "../src/components/Ofertas";
 import OfertaDia from '../src/components/OfertaDia';
-const Inicio = () => {
+const Inicio = ({productos, cargando}) => {
   return (
     <>
       <Navbar/>

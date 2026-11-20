@@ -87,15 +87,15 @@ const Navbar = () => {
               </ul>
             </nav>
 
-            <div className="contenido-users">
+            <div className="contenido-users ">
               <div className="user">
               <Search color="#c0bfbc"/>
-              <span >mi carrito</span>
+              <span className="lg:hidden" >mi carrito</span>
               </div>
               
               <div className="cart">
                 <ShoppingCart color="#c0bfbc" />
-                <span  >mi carrito</span>
+                <span  className="lg:hidden">mi carrito</span>
 
               </div>
               <button

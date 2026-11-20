@@ -105,7 +105,7 @@ header > article {
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 .label {
   font-size: 12px;
