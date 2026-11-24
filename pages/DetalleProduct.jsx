@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../src/components/Navbar';
 import Footer from '../src/components/Footer';
+import Relacionado from '../src/components/Relacionado';
 
 const DetalleProductos = ({ productos }) => {
 
@@ -34,6 +35,7 @@ const DetalleProductos = ({ productos }) => {
           <span className='text-base font-semibold text-gray-300'>stock disponible: {producto.stock}</span>
         </div>
       </div>
+      <Relacionado/>
       <Footer />
     </div>
   );

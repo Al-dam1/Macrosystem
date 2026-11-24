@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [MenuMovil, setMenuMovil] = useState(false);
   const [productosAbierto, setProductosAbierto] = useState(false);
+  const [isCartOpen, setCartOpen] = useState(false)
   return (
     <>
     

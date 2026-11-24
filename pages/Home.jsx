@@ -20,6 +20,7 @@ import Productos from '../data/products.json'
 import Admin from "./Admin";
 import RutasProtegidas from '../src/auth/RutasProtegidas'
 import { cartContext } from "../context/cartContext";
+// import Cart from "./Cart";
 const Home = () => {
 
   const { isAuthenticated, cargando } = useContext(cartContext)
@@ -44,7 +45,8 @@ const Home = () => {
             )
           }
         />
-        <Route path="/productos" element={<Articulo />} />
+        <Route path="/productos" element={<Articulo productos={Productos}
+                cargando={cargando} />} />
 
         <Route path="/conectividad" element={<Conectividad />} />
         <Route path="/contacto" element={<Contacto />} />
@@ -59,6 +61,7 @@ const Home = () => {
             </RutasProtegidas>
           }
         />
+        {/* <Route path="/cart" element={<Cart />} /> */}
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

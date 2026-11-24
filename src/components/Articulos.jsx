@@ -1,7 +1,7 @@
 import Data from '../../data/products.json';
 import Navbar from './Navbar';
 import Footer from './Footer';
-const Articulos = () => {
+const Articulos = ({producto, cargando}) => {
   return ( <>
   <Navbar/>
   <div className='fondo-tecnologico'>
